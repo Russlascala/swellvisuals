@@ -1,0 +1,55 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+  width:100px; 
+}
+
+.mt-30{margin-top:30px;}
+.mt-35{margin-top:35px;}
+
+.heading{margin-bottom:-7px;}
+
+
+
+
+/* Instafeed */
+
+/* Start instagram styles */
+.h2insta{
+  text-align: center;
+  margin-top:15px;
+}
+#instafeed{
+  align-items: center;
+}
+
+.instaImgs{ margin-top:30px;}
+
+
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+   
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
