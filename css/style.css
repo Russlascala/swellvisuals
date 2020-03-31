@@ -31,7 +31,7 @@ body{
 
 .shopClick{
   color:black;
-  
+
 }
 
 /* Instafeed */
@@ -61,25 +61,32 @@ footer .fa{
 footer .fa:hover{
   color:#00B8FF;
 }
-.contact-footer{color:#fff;}
+.contact-footer{color:#fff; text-align:right;}
 .contact-footer a{
   color:lightgray;
+}
+.copyrightfooter{ color:lightgray;
 }
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
+@media (max-width: 576px) { 
+  
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-   
+@media (max-width: 768px) { 
+   .contact-footer{
+    text-align: center;
+  }
+  .footer-icons{
+    text-align: center;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (max-width: 992px) { 
    
  }
 
