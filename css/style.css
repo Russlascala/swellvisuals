@@ -14,7 +14,16 @@ body{
 
 .fa-icon{font-size:45px;}
 
+/* Thank you page CSS font awesome icon */
+.thankyoupage-check {
+  color:#007E60;
+}
 
+.icon-ty-page{
+  text-align: center;
+  font-size: 100px;
+}
+.thanks-container{max-width:681px;display:block;margin:0 auto;}
 
 /* Instafeed */
 
