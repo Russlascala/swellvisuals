@@ -18,12 +18,14 @@ body{
 .thankyoupage-check {
   color:#007E60;
 }
-
+/* No thank you page currently */
 .icon-ty-page{
   text-align: center;
   font-size: 100px;
 }
 .thanks-container{max-width:681px;display:block;margin:0 auto;}
+
+
 
 /* Instafeed */
 
@@ -38,8 +40,24 @@ body{
 
 .instaImgs{ margin-top:30px;}
 
-
-
+/* Footer */
+footer{
+  padding:30px;
+  background-color:#3B4856;
+  
+}
+footer .fa{
+  padding:15px;
+  font-size:30px;
+  color:#fff;
+}
+footer .fa:hover{
+  color:#00B8FF;
+}
+.contact-footer{color:#fff;}
+.contact-footer a{
+  color:lightgray;
+}
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap */
 
