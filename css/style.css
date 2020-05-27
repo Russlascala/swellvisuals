@@ -9,10 +9,19 @@ body{
 
 .mt-30{margin-top:30px;}
 .mt-35{margin-top:35px;}
+.mb-35{margin-bottom: 35px;}
 
 .heading{margin-bottom:-7px;}
 
 .fa-icon{font-size:45px;}
+
+.img-box{
+  background-image: url(/imgs/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 575px;
+}
 
 /* Thank you page CSS font awesome icon */
 .thankyoupage-check {
@@ -29,9 +38,10 @@ body{
   width:200px;
 }
 
-.shopClick{
-  color:black;
+h4, .fa-icon, .heading, .subHeading{ color:#fff;}
 
+.shopClick{
+  color:#fff;
 }
 
 /* Instafeed */
