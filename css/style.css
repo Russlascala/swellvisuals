@@ -39,6 +39,9 @@ body{
 }
 
 h4, .fa-icon, .heading, .subHeading{ color:#fff;}
+.heading2{color:#3B4856;margin-bottom:-4px;}
+.subHeading2{color:#3B4856;}
+.port-contain{color:#3B4856;}
 
 .shopClick{
   color:#fff;
