@@ -1,6 +1,6 @@
 // instagram script 
 // for more info: https://github.com/stevenschobert/instafeed.js
-if ($('#instafeed').length >= 1) {
+/* if ($('#instafeed').length >= 1) {
   $(document).ready(function () {
     var userFeed = new Instafeed({
       get: 'user',
@@ -15,7 +15,20 @@ if ($('#instafeed').length >= 1) {
     userFeed.run();
   });
 } 
+ */
+console.log(Instafeed)
+var feed = new Instafeed({
+  accessToken: 'IGQVJYb1VlQjExdDgtZA3ltWGRmbmpDV1lVRDFMYkd2eWdjcnhXV2dXSWJnb1BKSTJhNkpERmhfNlpyOVJLa05XQU44T084U0x3X3llZA2M4SC1IZA09aZA1JFaEptb0IwQzlxaU1PZAXkzN19Fa3htNldJLQZDZD',
+  template: '<div class="col-lg-3 col-md-6 instaImgs"><a href="{{link}}" title={{caption}} target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+  limit: 24,
+  transform: function (item) {
+    var d = new Date(item.timestamp);
+    item.date = [d.getDate(), d.getMonth(), d.getYear()].join('/');
+    return item;
+  }
+});
 
+feed.run();
 
 
 /*   var feed = new Instafeed({
