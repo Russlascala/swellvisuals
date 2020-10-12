@@ -18,7 +18,7 @@
  */
 console.log(Instafeed)
 var feed = new Instafeed({
-  accessToken: 'IGQVJYb1VlQjExdDgtZA3ltWGRmbmpDV1lVRDFMYkd2eWdjcnhXV2dXSWJnb1BKSTJhNkpERmhfNlpyOVJLa05XQU44T084U0x3X3llZA2M4SC1IZA09aZA1JFaEptb0IwQzlxaU1PZAXkzN19Fa3htNldJLQZDZD',
+  accessToken: 'IGQVJYdnN3ZAXRvZA3IteGw0clNlb2wxc0ZAYS19ibmtFcXRLOTRkXzFjbkRtOHUxVmVuY0V0ZA3RuLThfTnZAkNTFxa2tYOHdBaUlIdVFuMmFXc1FxS1B5MC1KTzJSS0NGeGRFV2JSNjFxMXZAzMXp3RnhDMgZDZD',
   template: '<div class="col-lg-3 col-md-6 instaImgs"><a href="{{link}}" title={{caption}} target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
   limit: 24,
   transform: function (item) {
