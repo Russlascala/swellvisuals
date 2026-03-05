@@ -1,249 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio - Web Development</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Portfolio - Russ LaScala | Web Developer</title>
   <link rel="shortcut icon" href="imgs/sv_lighearblue_square.png" />
-  <script src="https://use.fontawesome.com/c7a60f8625.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <!-- The Token Agent service - make sure to use your own URL here -->
-  <script src='https://swellvisuals.herokuapp.com/token.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101132085-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-101132085-1'); 
+  </script>
 
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      <img src="imgs/sv_lighearblue.png" class="img-fluid logo" alt="Swell Visuals Logo">
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="imgs/sv_lighearblue.png" alt="Swell Visuals Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">RUSS LASCALA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="portfolio.html">Portfolio </a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
-  <div class="container port-contain">
-    <h1 class="text-center heading2 mt-35">My Portfolio</h1>
-    <h6 class="subHeading2 text-center">Websites I built/worked on.</h6>
-    <hr>
-  
-    <!-- CCJ -->
-    
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/collHunt.png" class="img-fluid port-logo m-auto d-block"
-          alt="Collectors Coins Huntington Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Shopify 2.0 Website</h5>
-        <p>A Shopify website created with Dawn theme. This site is a synced with with collectors 1946 below.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://www.collectorshuntington.com/" target="_blank">VIEW SITE</a>
-      </div>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <p class="hero-eyebrow">Web Development Portfolio</p>
+    <h1>Russ <span>LaScala</span></h1>
+    <p class="hero-sub">Building clean, functional websites and web apps. From Shopify storefronts to custom integrations — here's what I've made.</p>
+    <div class="hero-ctas">
+      <a href="#portfolio" class="btn-primary">View Projects</a>
+      <a href="about.html" class="btn-outline">About Me</a>
     </div>
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/ccj-logo.png" class="img-fluid port-logo m-auto d-block" alt="Collectors Coins and Jewelry Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Shopify Website</h5>
-        <p>Here is a website I created using Shopify Brooklyn theme and added custom sections and pages.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://www.collectors1946.com/" target="_blank">VIEW SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- Admediary  -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/adm-logo.png" class="img-fluid port-logo m-auto d-block" alt="Admediary Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Wordpress Theme</h5>
-        <p>At Admediary LLC, I created a Custom WordPress theme to move their site to a more user friendly platform.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://www.admediary.com/" target="_blank">VIEW SITE</a>
-      </div>
-    </div>
-    <!-- Clear Facet  -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/clearfacet.png" class="img-fluid port-logo m-auto d-block" alt="Clear Facet Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Shopify Example Site</h5>
-        <p>This is a fake jewelry website I created from Shopify's Brooklyn theme. I created all designs of the site from the logo, images, and custom coded sections.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://russlascala1.myshopify.com/" target="_blank">VIEW SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- CaseClients -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/cc-logo.png" class="img-fluid port-logo m-auto d-block" alt="Case Clients Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Wordpress Theme Copy</h5>
-        <p>Using the skeleton from the theme above I created an easy to manage website and blog for Case Clients to
-          generte leads. I also designed the logo.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://www.caseclients.com/" target="_blank">VIEW SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- complete tax debt - multi step form -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/ctd-logo.png" class="img-fluid port-logo m-auto d-block" alt="Case Clients Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Landing Page With Multi-step Form</h5>
-        <p>A landing page with a multi-step form with validation, written in vanilla js. This site is hosted by GitHub
-          pages. </p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://russlascala.github.io/mutistep-form-site-CTD/" target="_blank">VIEW SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- complete car warranty -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/ccw-logo.png" class="img-fluid port-logo m-auto d-block"
-          alt="Complete Car Warranty Logo">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Landing Page Website </h5>
-        <p>A landing page with navigation. Using Bootstrap 3 and chart.js This site is hosted by GitHub pages. </p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://russlascala.github.io/WP-CCW-nav-Iframe/index.html" target="_blank">VIEW
-          SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- wealth stream builder -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/wsb-logo.png" class="img-fluid port-logo m-auto d-block"
-          alt="Wealth Stream Builder">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Landing Page</h5>
-        <p>A simple landing page with parallax scrolling effect. This site is hosted by GitHub pages. I also designed the
-          logo.</p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://russlascala.github.io/FormSite-parallax/" target="_blank">VIEW
-          SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- Gold Trust -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/portfolio/gt-logo.png" class="img-fluid port-logo m-auto d-block"
-          alt="Wealth Stream Builder">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Lead Generation Website</h5>
-        <p>A simple lead Generation website. This site has multiple pages with FAQs, news posts, and live precious metals
-          prices. </p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://goldtrustpreciousmetals.com/" target="_blank">VIEW
-          SITE</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
-    <!-- Gold Trust -->
-    <div class="row mt-35">
-      <div class="col-md-3 bk-wht align-self-center">
-        <img src="imgs/sv_lighearblue.png" class="img-fluid port-logo m-auto d-block" alt="Wealth Stream Builder">
-      </div>
-      <div class="col-md-7 align-self-center">
-        <h5>Rock Paper Scissors Game</h5>
-        <p>Just for fun I made this Rock Paper Scissors Game. This site is hosted by GitHub pages. </p>
-      </div>
-      <div class="col-md-2 my-auto text-center">
-        <a class="btn btn-info" href="https://russlascala.github.io/RPS-game-js/" target="_blank">PLAY NOW</a>
-      </div>
-    </div>
-    <div class="divider d-block"></div>
   </div>
 
+  <div class="divider-line"></div>
 
- <footer class="footer-class mt-35">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mt-35 footer-icons">
-          <a href="https://www.instagram.com/swellvisuals" target="_blank">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/swellvisuals/" target="_blank">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/russlascala" target="_blank">
-            <i class="fa fa-linkedin"></i>
-          </a>
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">What I work with</p>
+    <h2 class="section-title">Skills & Tech</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>Frontend</h4>
+        <div class="skill-list">
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Next.js</span>
         </div>
-        <div class="col-md-4 mt-35 footer-logo">
-          <img src="imgs/sv_lighearblue.png" class="img-fluid logo m-auto d-block" alt="Swell Visuals Logo">
+      </div>
+      <div class="skill-category">
+        <h4>CMS & E-Commerce</h4>
+        <div class="skill-list">
+          <span class="skill-pill">Shopify</span>
+          <span class="skill-pill">Liquid</span>
+          <span class="skill-pill">WordPress</span>
         </div>
-        <div class="col-md-4 mt-35 contact-footer">
-          Email:
-          <p><a href="mailto:swellvisuals@gmail.com" target="_top">swellvisuals@gmail.com</a></p>
+      </div>
+      <div class="skill-category">
+        <h4>Tools & Platforms</h4>
+        <div class="skill-list">
+          <span class="skill-pill">Git / GitHub</span>
+          <span class="skill-pill">Vercel</span>
+          <span class="skill-pill">GitHub Pages</span>
         </div>
+      </div>
+      <div class="skill-category">
+        <h4>Other</h4>
+        <div class="skill-list">
+          <span class="skill-pill">PayPal SDK</span>
+          <span class="skill-pill">Shopify API</span>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div class="divider-line"></div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <p class="section-label">Work</p>
+    <h2 class="section-title">Projects</h2>
+
+    <!-- FEATURED: Dashboard Demo -->
+    <div class="featured-card">
+      <div class="featured-card-glow"></div>
+      <div>
+        <span class="featured-badge">&#9679; Coming Soon</span>
+        <h3>Next Lab</h3>
+        <p>A prototype internal tool exploring order workflows, payment tracking, and reporting for e-commerce operations. Built as part of my Next Lab sandbox for experimenting with full-stack architecture and modern deployment patterns.</p>
+        <div class="card-tags" style="margin-bottom:28px;">
+          <span class="tag">Next.js</span>
+          <span class="tag">React</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">Vercel</span>
+        </div>
+        <a href="mailto:swellvisuals@gmail.com?subject=Next Lab Access Request" class="btn-primary" style="font-size:13px;">Request Access</a>
       </div>
-      <div class="copyrightfooter text-center mt-35">
-        <p>&copy;2013-
-          <script>document.write(new Date().getFullYear())</script> Swell Visuals - Russ L. All Rights Reserved. </p>
+      <div class="featured-preview">
+        <div class="preview-bar">
+          <div class="preview-dot red"></div>
+          <div class="preview-dot yellow"></div>
+          <div class="preview-dot green"></div>
+        </div>
+        <div class="preview-row highlight"></div>
+        <div class="preview-table-row">
+          <div class="preview-cell blue-cell"></div>
+          <div class="preview-cell"></div>
+          <div class="preview-cell"></div>
+        </div>
+        <div class="preview-table-row">
+          <div class="preview-cell"></div>
+          <div class="preview-cell blue-cell"></div>
+          <div class="preview-cell"></div>
+        </div>
+        <div class="preview-table-row">
+          <div class="preview-cell"></div>
+          <div class="preview-cell"></div>
+          <div class="preview-cell blue-cell"></div>
+        </div>
+        <div class="preview-row short" style="margin-top:4px;"></div>
+        <div class="preview-row medium"></div>
+        <div class="preview-row full"></div>
       </div>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="portfolio-grid">
+
+      <!-- <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/collHunt.png" alt="Collectors Coins Huntington">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Shopify</p>
+          <h3>Collectors Huntington</h3>
+          <p>Shopify 2.0 storefront built on the Dawn theme, synced inventory with Collectors 1946.</p>
+          <div class="card-tags">
+            <span class="tag">Shopify 2.0</span>
+            <span class="tag">Dawn Theme</span>
+            <span class="tag">Liquid</span>
+          </div>
+          <a href="https://www.collectorshuntington.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div> -->
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/adm-logo.png" alt="Admediary">
+        </div>
+        <div class="card-body">
+          <p class="card-type">WordPress</p>
+          <h3>Admediary</h3>
+          <p>Custom WordPress theme built to move Admediary LLC to a more modern, user-friendly platform.</p>
+          <div class="card-tags">
+            <span class="tag">WordPress</span>
+            <span class="tag">Custom Theme</span>
+            <span class="tag">PHP</span>
+          </div>
+          <a href="https://www.admediary.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/clearfacet.png" alt="Clear Facet">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Shopify · Concept</p>
+          <h3>Clear Facet</h3>
+          <p>Fully designed concept jewelry store — logo, imagery, and all custom coded sections built from scratch.</p>
+          <div class="card-tags">
+            <span class="tag">Shopify</span>
+            <span class="tag">Logo Design</span>
+            <span class="tag">Custom UI</span>
+          </div>
+          <a href="https://russlascala1.myshopify.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/ccj-logo.png" alt="Collectors 1946">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Shopify</p>
+          <h3>Collectors 1946</h3>
+          <p>Custom Shopify site using the Brooklyn theme with added custom sections and pages.</p>
+          <div class="card-tags">
+            <span class="tag">Shopify</span>
+            <span class="tag">Brooklyn Theme</span>
+            <span class="tag">Custom Sections</span>
+          </div>
+          <a href="https://www.collectors1946.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/cc-logo.png" alt="Case Clients">
+        </div>
+        <div class="card-body">
+          <p class="card-type">WordPress</p>
+          <h3>Case Clients</h3>
+          <p>Lead generation site and blog built on a custom WordPress theme. Includes logo design.</p>
+          <div class="card-tags">
+            <span class="tag">WordPress</span>
+            <span class="tag">Lead Gen</span>
+            <span class="tag">Logo Design</span>
+          </div>
+          <a href="https://www.caseclients.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/ctd-logo.png" alt="Complete Tax Debt">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Landing Page</p>
+          <h3>Complete Tax Debt</h3>
+          <p>Landing page with a multi-step form and full validation written in vanilla JavaScript.</p>
+          <div class="card-tags">
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">Multi-step Form</span>
+            <span class="tag">Validation</span>
+          </div>
+          <a href="https://russlascala.github.io/mutistep-form-site-CTD/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/ccw-logo.png" alt="Complete Car Warranty">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Landing Page</p>
+          <h3>Complete Car Warranty</h3>
+          <p>Multi-page landing site with navigation, charts, and responsive layout using Bootstrap 3.</p>
+          <div class="card-tags">
+            <span class="tag">Bootstrap 3</span>
+            <span class="tag">Chart.js</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="https://russlascala.github.io/WP-CCW-nav-Iframe/index.html" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/wsb-logo.png" alt="Wealth Stream Builder">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Landing Page</p>
+          <h3>Wealth Stream Builder</h3>
+          <p>Landing page with parallax scrolling effect. Logo designed in-house.</p>
+          <div class="card-tags">
+            <span class="tag">Parallax</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Logo Design</span>
+          </div>
+          <a href="https://russlascala.github.io/FormSite-parallax/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap">
+          <img src="imgs/portfolio/gt-logo.png" alt="Gold Trust Precious Metals">
+        </div>
+        <div class="card-body">
+          <p class="card-type">Lead Gen Website</p>
+          <h3>Gold Trust Precious Metals</h3>
+          <p>Multi-page lead gen site with FAQs, news posts, and live precious metals price feed.</p>
+          <div class="card-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Live API</span>
+            <span class="tag">Multi-page</span>
+          </div>
+          <a href="https://goldtrustpreciousmetals.com/" target="_blank" class="card-link">View Site <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="card-img-wrap" style="background: linear-gradient(135deg, #1e2d3d 0%, #0f1923 100%);">
+          <img src="imgs/sv_lighearblue.png" alt="Rock Paper Scissors">
+        </div>
+        <div class="card-body">
+          <p class="card-type">JavaScript Game</p>
+          <h3>Rock Paper Scissors</h3>
+          <p>A fun browser-based Rock Paper Scissors game built with vanilla JavaScript.</p>
+          <div class="card-tags">
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">Game Logic</span>
+            <span class="tag">CSS Animations</span>
+          </div>
+          <a href="https://russlascala.github.io/RPS-game-js/" target="_blank" class="card-link">Play Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider-line"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">About me</p>
+        <h2>Developer &amp;<br>Photographer</h2>
+        <p>I'm a developer and photographer based on Long Island building web tools and e-commerce systems for small businesses.</p> 
+
+        <p>Swell Visuals started as an ocean photography project in 2013 and eventually became the home for my development work too.</p>
+
+        <a href="about.html" class="card-link">Read more about me <i class="fa fa-arrow-right"></i></a>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="num">10+</div>
+            <div class="label">Years building</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">15+</div>
+            <div class="label">Projects shipped</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">3</div>
+            <div class="label">CMS platforms</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">∞</div>
+            <div class="label">Ocean sessions</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-photo-wrap">
+        <img src="imgs/personal.JPG" alt="Russ LaScala">
+        <div class="about-photo-frame"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="imgs/sv_lighearblue.png" alt="Swell Visuals">
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/swellvisuals" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/swellvisuals/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/russlascala" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">
+        <a href="mailto:swellvisuals@gmail.com">swellvisuals@gmail.com</a>
+      </p>
+      <p class="footer-copy">&copy;2013–<script>document.write(new Date().getFullYear())</script> Swell Visuals · Russ LaScala. All Rights Reserved.</p>
     </div>
   </footer>
 
+  <script>
+    // Mobile nav
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
 
-
-  <script src="script/instafeed.min.js" type="text/javascript"></script>
-  <script src="script/russ.js" type="text/javascript"></script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
-
 </html>

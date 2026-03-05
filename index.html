@@ -5,142 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Swell Visuals - Ocean Photography by Russ LaScala</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta name="description" content="Swell Visuals, ocean photography by Russ LaScala. Shop ocean beach surf prints. Web development portfolio.">
   <link rel="shortcut icon" href="imgs/sv_lighearblue_square.png" />
-  <script src="https://use.fontawesome.com/c7a60f8625.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101132085-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-101132085-1');
   </script>
-
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      <img src="imgs/sv_lighearblue.png" class="img-fluid logo" alt="Swell Visuals Logo">
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="imgs/sv_lighearblue.png" alt="Swell Visuals Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">RUSS LASCALA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio </a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
-  <div class="img-box d-flex align-items-center ">
-  <div class="container">
-    <h1 class="text-center heading mt-35">Swell Visuals</h1>
-    <h6 class="subHeading text-center">Ocean Photography By Russ LaScala</h6>
-    <div class="row text-center mb-35">
-      <div class="col-md-4 mt-35">
-        <i class="fa fa-camera fa-icon"></i>
-        <h4>Photographs from the sea!</h4>
-      </div>
-      <div class="col-md-4 mt-35">
-        <a href="shop.html" class="shopClick"><i class="fa fa-image fa-icon"></i>
-        <h4>Shop Prints!</h4></a>
-      </div>
-      <div class="col-md-4 mt-35">
-        <!-- <i class="fa fa-sun-o fa-icon"></i>
-              <h4>Sunrise and Sunsets!</h4> -->
-        <i class="fa fa-laptop fa-icon"></i>
-        <h4>Web Development</h4>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Ocean Photography &amp; Web Development</p>
+      <h1>Swell <span>Visuals</span></h1>
+      <p class="hero-sub">By Russ LaScala &mdash; Long Island, NY</p>
+      <div class="hero-ctas">
+        <a href="shop.html" class="btn-primary">Shop Prints</a>
+        <a href="portfolio.html" class="btn-outline">View Portfolio</a>
       </div>
     </div>
-  </div>
-  </div>
-
-  <div class="container mt-30">
-    <div class="thanks-container">
-      <h5>
-        Below is a gallery of images from my instagram. Prints are available for purchase <a href="shop.html">here.</a> If there is an image you would
-        like to purchase that is not in the shop please <a href="about.html">contact</a> me at <a href="mailto:russlascala@gmail.com" target="_top">russlascala@gmail.com</a>
-      </h5>
+    <div class="hero-scroll">
+      <i class="fa fa-chevron-down"></i>
     </div>
   </div>
 
-  <div class="container mt-35">
-    <div>
-      <a href="https://instagram.com/swellvisuals">
-        <h2 class="h2insta"><i class="fa fa-fw fa-instagram"></i>Swell Visuals<h2>
+  <!-- WHAT I DO -->
+  <div class="what-i-do">
+    <div class="what-i-do-grid">
+      <a href="#gallery" class="what-card">
+        <i class="fa fa-camera icon"></i>
+        <h3>Ocean Photography</h3>
+        <p>Surf, waves, and seascapes from Long Island and beyond. Prints available in the shop.</p>
       </a>
-      <div id="instafeed" class="row"></div>
+      <a href="shop.html" class="what-card">
+        <i class="fa fa-image icon"></i>
+        <h3>Shop Prints</h3>
+        <p>Order quality prints of my ocean photography shipped directly to your door.</p>
+      </a>
+      <a href="portfolio.html" class="what-card">
+        <i class="fa fa-laptop icon"></i>
+        <h3>Web Development</h3>
+        <p>Shopify stores, WordPress sites, and custom web apps. See my full portfolio.</p>
+      </a>
     </div>
   </div>
 
-  <footer class="footer-class mt-35">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mt-35 footer-icons">
-          <a href="https://www.instagram.com/swellvisuals" target="_blank">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/swellvisuals/" target="_blank">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/russlascala" target="_blank">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="col-md-4 mt-35 footer-logo">
-          <img src="imgs/sv_lighearblue.png" class="img-fluid logo m-auto d-block" alt="Swell Visuals Logo">
-        </div>
-        <div class="col-md-4 mt-35 contact-footer">
-          Email:
-          <p><a href="mailto:swellvisuals@gmail.com" target="_top">swellvisuals@gmail.com</a></p>
-        </div>
+  <div class="divider-line"></div>
 
+  <!-- INSTAGRAM / GALLERY -->
+  <div class="insta-section" id="gallery">
+    <div class="insta-header">
+      <div>
+        <p class="section-label">Photography</p>
+        <h2 class="section-title">Gallery</h2>
       </div>
-      <div class="copyrightfooter text-center mt-35">
-        <p>&copy;2013-
-          <script>document.write(new Date().getFullYear())</script> Swell Visuals - Russ L. All Rights Reserved. </p>
+      <a href="https://instagram.com/swellvisuals" target="_blank" class="insta-link">
+        <i class="fa fa-instagram"></i> @swellvisuals <i class="fa fa-arrow-right"></i>
+      </a>
+    </div>
+    <p class="insta-note">
+      Prints are available for purchase in the <a href="shop.html">shop</a>. Don't see what you're looking for?
+      <a href="about.html">Contact me</a> directly.
+    </p>
+    <div id="instafeed"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="imgs/sv_lighearblue.png" alt="Swell Visuals">
       </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/swellvisuals" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/swellvisuals/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/russlascala" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">
+        <a href="/cdn-cgi/l/email-protection#512226343d3d27382224303d2211363c30383d7f323e3c"><span class="__cf_email__" data-cfemail="1d6e6a7871716b746e687c716e5d7a707c7471337e7270">[email&#160;protected]</span></a>
+      </p>
+      <p class="footer-copy">
+        &copy;2013&ndash;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Swell Visuals &middot; Russ LaScala. All Rights Reserved.
+      </p>
     </div>
   </footer>
 
-  <!-- Still need to add 
-  
-    SEO 
-    https://www.readmodwrite.com/2019-01-18-jekyll-seo-tags/
-    https://github.com/jekyll/jekyll-sitemap
-
-    Fix form thank you 
-    https://medium.com/@asjas/using-formspree-io-on-your-github-pages-a60c290d1ee
-  
-  
-  
-  -->
   <script src="script/instafeed.min.js" type="text/javascript"></script>
   <script src="script/russ.js" type="text/javascript"></script>
+  <script>
+    // Mobile nav
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Ken Burns effect on hero
+    window.addEventListener('load', function() {
+      document.getElementById('heroBg').classList.add('loaded');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
