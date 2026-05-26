@@ -85,5 +85,11 @@
       document.getElementById('navLinks').classList.toggle('open');
     });
   </script>
+
+  <script>
+    window._iframeTimeout = setTimeout(function() {
+      document.getElementById('shopFallback').style.display = 'block';
+    }, 6000); // show fallback after 6 seconds if iframe hasn't loaded
+  </script>
 </body>
 </html>
