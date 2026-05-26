@@ -44,7 +44,21 @@
   margin: 0 auto;
   padding: 0 48px 80px;
 }
+.shop-fallback {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
 
+.shop-fallback a {
+  color: #7ec8e3; /* match your light blue brand color */
+  text-decoration: none;
+}
+
+.shop-fallback a:hover {
+  text-decoration: underline;
+}
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   .shop-header { padding: 100px 24px 32px; }
